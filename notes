@@ -1,0 +1,37 @@
+-> make html and css boiler plate 
+-> make a main div (height 100%, width 100%)
+-> make another panel div inside the main div, -> make this center using display flex in main div, make overflow hidden so that anything goes out of it will be hidden
+-> make another div inside the panel at the top of the panel div
+-> make three boxes inside the ptop(panel at the top of panel), make panel top display flex
+-> make the three boxes go side by side with some space between them
+-> name the three boxes Hit, Timer and Score
+-> make the bottom panel 
+-> set width 100% and height calc(100% - 100px)
+-> make a bubble of size about 60px, border-radius 50%, make it disply - flex, justify-content - center, align-items - center
+-> give hover effect to make the color darker when hovered on it and change the cursor type to pointer
+-> make the display of bottom panel flex
+-> when many elements are made though then can't be stored in a line still they are squeezed in, to remove this we need to use flex-wrap - wrap
+
+--> now we need javascript to make more bubbles
+-> create a loop which creates bubbles some n number of times, save it in a string
+-> using DOM (.innerHTML) write the clutter
+-> now we need to change the number for each of the bubble, using Math.random() function
+-> put the bubble making code in a function
+
+-> creating the timer
+create a variable timer, set its value to 60 at the start
+make a function which changes the timer value using the setInterval function
+change the textcontent of the timer using DOM
+now we have to make sure that the timer does not go beyond 0
+
+-> changing the value of hit everytime we refresh
+it is similar to that done above, we need to change the text content of the hit box
+
+--> Game Rules: within the timer when we hit the bubble with the same number as hit, the score adds up and the hit and bubbles are refreshed
+
+-> Event Bubbling
+jispe click karoge woh element par event raise hoga, aaur event listener na milne par event element ke parent par listener dhundega 
+
+-> Now we need to write the code to increase the score
+we need to add event listener to bottom panel and use details.target to get on which bubble event is raised.
+change the type to number to add to score using Number() function
